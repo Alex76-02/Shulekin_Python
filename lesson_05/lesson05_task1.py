@@ -12,4 +12,4 @@ blue_button = ".btn.btn-primary"
 search_button = driver.find_element(By.CSS_SELECTOR, blue_button)
 search_button.click()
 sleep(5)
-driver.close()
+driver.quit()
