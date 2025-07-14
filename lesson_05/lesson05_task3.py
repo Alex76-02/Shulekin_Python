@@ -9,7 +9,7 @@ driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().
 
 driver.maximize_window()
 driver.get("http://the-internet.herokuapp.com/inputs")
-input_field = ".example > input:nth-child(2)"
+input_field = "[type='number']"
 search_input = driver.find_element(By.CSS_SELECTOR, input_field)
 search_input.send_keys("Sky")
 sleep(5)
